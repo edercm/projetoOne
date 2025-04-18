@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<soapenv:Envelope xmlns:soapenv="https://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:{%- block componente -%}{%- endblock componente -%}">
+    <soapenv:Header />
+    <soapenv:Body>
+        {% block body %}
+        {% endblock body %}
+    </soapenv:Body>
+</soapenv:Envelope>

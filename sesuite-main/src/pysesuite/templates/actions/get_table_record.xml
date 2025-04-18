@@ -1,0 +1,13 @@
+{% extends "actions/base.xml" %}
+{% block componente %}workflow{% endblock componente %}
+{% block body %}
+    <urn:getTableRecord>
+        <urn:TableID>{{ table_id }}</urn:TableID>
+        <urn:Pagination>{{ pagination }}</urn:Pagination>
+        <urn:TableFieldList>
+        {% for table_field in table_field_list %}
+            {{ table_field|safe }}
+        {% endfor %}
+        </urn:TableFieldList>
+    </urn:getTableRecord>
+{% endblock body %}

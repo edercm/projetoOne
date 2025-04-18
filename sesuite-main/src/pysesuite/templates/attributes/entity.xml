@@ -1,0 +1,4 @@
+<urn:EntityAttribute>
+    <urn:EntityAttributeID>{{ id }}</urn:EntityAttributeID>
+    <urn:EntityAttributeValue>{{ value }}</urn:EntityAttributeValue>
+</urn:EntityAttribute>

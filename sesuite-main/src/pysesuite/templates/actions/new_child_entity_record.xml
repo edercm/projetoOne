@@ -1,0 +1,19 @@
+{% extends "actions/base.xml" %}
+{% block componente %}workflow{% endblock componente %}
+{% block body %}
+    <urn:newChildEntityRecord>
+        <urn:WorkflowID>{{ workflow_id }}</urn:WorkflowID>
+        <urn:MainEntityID>{{ entity_id }}</urn:MainEntityID>
+        <urn:ChildRelationshipID>{{ relationship_id }} </urn:ChildRelationshipID>
+        <urn:EntityAttributeList>
+        {% for entity in entity_attribute %}
+            {{ entity|safe }}
+        {% endfor %}
+        </urn:EntityAttributeList>
+        <urn:RelationshipList>
+        {% for relationship in relationship_attribute %}
+            {{ relationship|safe }}
+        {% endfor %}
+        </urn:RelationshipList>
+    </urn:newChildEntityRecord>
+{% endblock body %}

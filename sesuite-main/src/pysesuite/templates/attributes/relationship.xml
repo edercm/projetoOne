@@ -1,0 +1,9 @@
+<urn:Relationship>
+    <urn:RelationshipID>{{ relationship_id }}</urn:RelationshipID>
+    <urn:RelationshipAttributeList>
+        <urn:RelationshipAttribute>
+            <urn:RelationshipAttributeID>{{ field_id }}</urn:RelationshipAttributeID>
+            <urn:RelationshipAttributeValue>{{ field_value }}</urn:RelationshipAttributeValue>
+        </urn:RelationshipAttribute>
+    </urn:RelationshipAttributeList>
+</urn:Relationship>

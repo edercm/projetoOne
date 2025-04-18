@@ -1,0 +1,24 @@
+{% extends "actions/base.xml" %}
+{% block componente %}workflow{% endblock componente %}
+{% block body %}
+    <urn:newWorkflowEditData>
+        <urn:ProcessID>{{ process_id }}</urn:ProcessID>
+        <urn:WorkflowTitle>{{ workflow_title }}</urn:WorkflowTitle>
+        <urn:UserID>{{ user_id }}</urn:UserID>
+        <urn:EntityList>
+            <urn:Entity>
+                <urn:EntityID>{{ entity_id }}</urn:EntityID>
+                <urn:EntityAttributeList>
+                {% for entity_attribute in entity_list %}
+                    {{ entity_attribute|safe }}
+                {% endfor %}
+                </urn:EntityAttributeList>
+                <urn:RelationshipList>
+                {% for relationship in relationship_list %}
+                    {{ relationship|safe }}
+                {% endfor %}
+                </urn:RelationshipList>
+            </urn:Entity>
+        </urn:EntityList>
+    </urn:newWorkflowEditData>
+{% endblock body %}

@@ -1,0 +1,9 @@
+{% extends "actions/base.xml" %}
+{% block componente %}workflow{% endblock componente %}
+{% block body %}
+    <urn:executeActivity>
+        <urn:WorkflowID>{{ workflow_id }}</urn:WorkflowID>
+        <urn:ActivityID>{{ activity_id }}</urn:ActivityID>
+        <urn:ActionSequence>{{ action_sequence }}</urn:ActionSequence>
+    </urn:executeActivity>
+{% endblock body %}

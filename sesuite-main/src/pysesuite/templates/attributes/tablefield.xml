@@ -1,0 +1,4 @@
+<urn:TableField>
+    <urn:TableFieldID>{{ id }}</urn:TableFieldID>
+    <urn:TableFieldValue>{{ value }}</urn:TableFieldValue>
+</urn:TableField>
