@@ -4,10 +4,10 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pysesuite"
-description = "Utilize o Python para automatizar o Se Suite!"
+description = ""
 readme = "README.md"
 authors = [
-    { name = "Pedro Henrique Souza Meinen", email = "pedro_meinen@sicredi.com.br" },
+    { name = "", email = "" },
 ]
 requires-python = ">=3.9"
 dependencies = ["jinja2>=3.1.5", "requests>=2.32.3"]
@@ -24,7 +24,7 @@ dev = [
 path = 'src/pysesuite/__init__.py'
 
 [tool.ruff]
-extend = "C:/Users/pedro_meinen/AppData/Roaming/ruff/ruff.toml"
+extend = ""
 target-version = "py39"
 
 [tool.ruff.lint]
